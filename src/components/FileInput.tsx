@@ -1,6 +1,7 @@
 import { FC, FormEvent, useRef } from 'react';
 
-interface FileInputProps extends HTMLInputElement {
+interface FileInputProps {
+  name: string;
   error: string;
   onChange: (name: string, stepKey: string, file?: FileList) => void;
   stepKey: string;

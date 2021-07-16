@@ -5,7 +5,9 @@ type Option = {
   label: string;
 };
 
-interface SelectProps extends HTMLSelectElement {
+interface SelectProps {
+  name: string;
+  value: string;
   onChange: (event: FormEvent<HTMLSelectElement>) => void;
   choices: Option[];
   error: string;

@@ -1,6 +1,10 @@
 import { FC, FormEvent } from 'react';
 
-interface InputProps extends HTMLInputElement {
+interface InputProps {
+  type: string;
+  placeholder: string;
+  name: string;
+  value: string;
   error: string;
   onChange: (event: FormEvent<HTMLInputElement>) => void;
 }
