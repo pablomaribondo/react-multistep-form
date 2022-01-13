@@ -4,7 +4,7 @@ import Step from './Step';
 import Preview from './Preview';
 import validate from '../helpers/validate';
 
-interface FormData {
+export interface FormData {
   [key: string]: {
     value?: string;
     required?: boolean;
