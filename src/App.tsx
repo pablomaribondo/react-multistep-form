@@ -1,5 +1,8 @@
 import { FC } from 'react';
+
 import './App.css';
+
+import Form from './components/Form';
 
 const App: FC = () => {
   return (
@@ -16,7 +19,7 @@ const App: FC = () => {
       <div className="container pt-5">
         <div className="columns">
           <div className="column is-half is-offset-one-quarter">
-            {/* form component */}
+            <Form />
           </div>
         </div>
       </div>
